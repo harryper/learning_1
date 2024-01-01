@@ -9,7 +9,7 @@ elif bool(input("请问是否充值？（True/False）")):
     print("感谢您的充值，可以继续游戏~")
 else:
     print("您今日的游戏时间已用，欢迎明天再来王者峡谷冒险")
-"""
+
 # 嵌套判断语句
 print("~~~欢迎来到王者峡谷！~~~")
 if int(input("请输入你的年龄：")) > 18:
@@ -24,7 +24,6 @@ if int(input("请输入你的年龄：")) > 18:
 else:
     print("您是未成年人，每天只能玩1小时王者荣耀")
 
-"""
 if (bool([])) :
     print("True")
 else:
@@ -38,5 +37,12 @@ isTrue = data == str(True)
 print("公司发放礼物，")
 age = int(input("您的年龄是："))
 if age >= 18 and age < 30:
-    if int(input("您入职时间多少年？")) > 2 or int(input("级别：\n")) > 3:
-        print("领奖")
+    if int(input("您入职时间多少年？")) <= 2:
+        if int(input("您的级别：")) > 3:
+            print("颁奖给你")
+        else:
+            print("抱歉，不可领取")
+    else:
+        print("抱歉，不可领取")
+else:
+    print("抱歉，不可领取")
