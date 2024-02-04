@@ -31,3 +31,12 @@ print(count)
 # len方法，统计字符串的长度
 length = len(mystr4)
 print(length)
+
+# 小练习
+mystr5 = "itbnzidn itnzbj bnfgit"
+count = mystr5.count("it")
+print(f"字符串中‘it'字符的个数是：{count}")
+mystr6 = mystr5.replace(' ','|')
+print(f"空格替换为'|'后字符串为：{mystr6}")
+mylist = mystr6.split('|')
+print(f"分割后的字符串列表为：{mylist}")
